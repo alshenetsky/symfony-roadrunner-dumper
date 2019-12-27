@@ -1,0 +1,23 @@
+{
+  "name": "alshenetsky/symfony-roadrunner-dumper",
+  "type": "symfony-bundle",
+  "description": "A replacement for dd() function which works in roadrunner",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1.3",
+    "symfony/var-dumper": "~3.3 || ^4.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "files": [
+      "dev/functions.php"
+    ],
+    "psr-4": {
+      "SymfonyRoadrunner\\": "src/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/alshenetsky/symfony-roadrunner-dumper/issues",
+    "source": "https://github.com/alshenetsky/symfony-roadrunner-dumper"
+  }
+}
