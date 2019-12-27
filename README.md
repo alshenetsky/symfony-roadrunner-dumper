@@ -11,8 +11,6 @@ Require this package with composer using the following command:
 $ composer require --dev alshenetsky/symfony-roadrunner-dumper "^1.0"
 ```
 
-> Installed `composer` is required ([how to install composer][getcomposer]).
-
 ### RoadRunner use-case
 
 For example, if you trying to `dd('test');` somewhere, you will see something like that:
