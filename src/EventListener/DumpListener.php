@@ -13,7 +13,7 @@ class DumpListener
 {
     public function onKernelException(ExceptionEvent $event)
     {
-        $e = $event->getException();
+        $e = method_exists($event, 'getThrowable') ? $event->getThrowable() : $event->getException();
         if ($e instanceof Dump) {
             $event->allowCustomResponseCode();
             $event->setResponse(
